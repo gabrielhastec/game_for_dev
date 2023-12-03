@@ -1,0 +1,27 @@
+body{
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(117, 197, 250), rgb(60, 40, 200));
+    background-attachment: fixed;
+
+    display: grid;
+    place-items: center;
+} 
+h1{
+    color: white;
+}
+#stl_name {
+    color: white;
+    text-align: justify;
+}
+#Game {
+    color: white;
+    font-size: 150%;
+}
+#all {
+    border: 0;
+}
+.quest {
+    background-color: white;
+    border-radius: 15px;
+}
+
