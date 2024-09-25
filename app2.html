@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Dev Evolucion</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f0f8ff;
+            padding: 20px;
+        }
+        #all {
+            margin-top: 20px;
+        }
+        #finalizar {
+            width: 100%;
+            padding: 10px;
+        }
+        #stl_name {
+            margin-bottom: 20px;
+        }
+        .quest {
+            margin-bottom: 20px;
+        }
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="my-4">Game Dev Evolucion</h1>
+        <p id="Game" class="lead"><b>Vamos testar suas habilidades em programação?</b></p>
+    </div>
+
+    <div class="container">
+        <fieldset id="all" class="border p-4 rounded">
+            <div id="stl_name" class="mb-3">
+                <label class="form-label questions" for="player"><b>Digite o seu nome:</b></label>
+                <input type="text" class="form-control" name="name" id="player" placeholder="Seu nome">
+            </div>
+
+            <div class="questions" id="question1">
+                <fieldset class="quest border p-3 rounded">
+                    <p><b>1- Qual dos seguintes não é uma linguagem de programação?</b></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="q1_a" data-correct="false">
+                        <label class="form-check-label" for="q1_a">Python</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="q1_b" data-correct="false">
+                        <label class="form-check-label" for="q1_b">HTML</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="q1_c" data-correct="false">
+                        <label class="form-check-label" for="q1_c">SQL</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="q1_d" data-correct="true">
+                        <label class="form-check-label" for="q1_d">GIF</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="questions" id="question2">
+                <fieldset class="quest border p-3 rounded">
+                    <p><b>2- O que é um "loop" em programação?</b></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="q2_a" data-correct="false">
+                        <label class="form-check-label" for="q2_a">Uma expressão matemática</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="q2_b" data-correct="true">
+                        <label class="form-check-label" for="q2_b">Uma estrutura de controle que repete um bloco de código</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="q2_c" data-correct="false">
+                        <label class="form-check-label" for="q2_c">Um tipo de variável</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="q2_d" data-correct="false">
+                        <label class="form-check-label" for="q2_d">Um tipo de comentário</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="questions" id="question3">
+                <fieldset class="quest border p-3 rounded">
+                    <p><b>3- Qual é a função principal do HTML em desenvolvimento web?</b></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="q3_a" data-correct="false">
+                        <label class="form-check-label" for="q3_a">Manipular dados no servidor</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="q3_b" data-correct="false">
+                        <label class="form-check-label" for="q3_b">Estilizar elementos na página</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="q3_c" data-correct="true">
+                        <label class="form-check-label" for="q3_c">Estruturar o conteúdo da página</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="q3_d" data-correct="false">
+                        <label class="form-check-label" for="q3_d">Criar consultas de banco de dados</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="questions" id="question4">
+                <fieldset class="quest border p-3 rounded">
+                    <p><b>4- O que é um "bug" em programação?</b></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4" id="q4_a" data-correct="false">
+                        <label class="form-check-label" for="q4_a">Um inseto que entra no computador</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4" id="q4_b" data-correct="true">
+                        <label class="form-check-label" for="q4_b">Um problema em um programa que causa comportamento inesperado</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4" id="q4_c" data-correct="false">
+                        <label class="form-check-label" for="q4_c">Um tipo de variável</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4" id="q4_d" data-correct="false">
+                        <label class="form-check-label" for="q4_d">Um código bem escrito</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="questions" id="question5">
+                <fieldset class="quest border p-3 rounded">
+                    <p><b>5- Qual dos seguintes é um banco de dados relacional?</b></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5" id="q5_a" data-correct="false">
+                        <label class="form-check-label" for="q5_a">MongoDB</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5" id="q5_b" data-correct="true">
+                        <label class="form-check-label" for="q5_b">SQLite</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5" id="q5_c" data-correct="false">
+                        <label class="form-check-label" for="q5_c">Redis</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5" id="q5_d" data-correct="false">
+                        <label class="form-check-label" for="q5_d">Elasticsearch</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <input id="finalizar" class="btn btn-primary mt-4" type="button" value="Finalizar" onclick="process()">
+        </fieldset>
+    </div>
+
+    <div class="container result text-center">
+        <p id="result_level"></p>
+        <p id="result_ranking"></p>
+    </div>
+    
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5
